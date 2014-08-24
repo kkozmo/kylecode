@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "about" => "pages#about"
   get "fun" => "pages#fun" # This is a path that my fun_path will direct text to for pages
