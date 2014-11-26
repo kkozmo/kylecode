@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pins
 
   devise_for :users
-  root "pages#home"
+  root "pins#index"
   get "about" => "pages#about"
   get "fun" => "pages#fun" # This is a path that my fun_path will direct text to for pages
 
